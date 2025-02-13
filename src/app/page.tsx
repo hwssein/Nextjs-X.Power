@@ -1,7 +1,11 @@
-import React from "react";
+import HomePage from "@/components/templates/homepage/HomePage";
 
 function Home() {
-  return <div>سلام چطوری خوبی</div>;
+  return (
+    <>
+      <HomePage />
+    </>
+  );
 }
 
 export default Home;

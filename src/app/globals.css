@@ -12,6 +12,10 @@ a:visited {
   color: inherit;
 }
 
+:root {
+  --stroke: #bdadff;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

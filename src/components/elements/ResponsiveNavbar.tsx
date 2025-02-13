@@ -18,7 +18,7 @@ function ResponsiveNavbar() {
 
   return (
     <>
-      <nav className="w-full mt-2 flex items-center justify-between">
+      <nav className="w-full flex items-center justify-between">
         <div className="w-full flex items-center justify-start">
           <Sheet>
             <SheetTrigger className="p-2 cursor-pointer mb-1">

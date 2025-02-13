@@ -8,7 +8,7 @@ function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="w-full mt-2 flex items-center justify-between">
+    <nav className="w-full flex items-center justify-between">
       <ul className="w-full flex items-center justify-start gap-6">
         <li className="p-2 font-extrabold text-2xl tracking-wider uppercase">
           x.power
