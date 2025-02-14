@@ -23,12 +23,12 @@ a:visited {
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
+    --foreground: 231 72% 8%;
+    --card: 222.2deg 30% 15%;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 251.3 97.8% 64.9%;
+    --primary: 245.2 70% 56.1%;
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -82,4 +82,8 @@ a:visited {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.services-card {
+  @apply max-w-72 flex flex-col items-center justify-start gap-6 py-10 px-4 bg-card backdrop-blur border border-foreground rounded-lg hover:border-[var(--stroke)] hover:bg-primary transition-all ease-in duration-100;
 }
