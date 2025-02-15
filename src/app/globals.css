@@ -13,7 +13,8 @@ a:visited {
 }
 
 :root {
-  --stroke: #bdadff;
+  --highlight: #bdadff;
+  --stroke: #ffffff80;
 }
 
 @tailwind base;
@@ -28,7 +29,7 @@ a:visited {
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 245.2 70% 56.1%;
+    --primary: 251 98% 65%;
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -85,5 +86,26 @@ a:visited {
 }
 
 .services-card {
-  @apply max-w-72 flex flex-col items-center justify-start gap-6 py-10 px-4 bg-card backdrop-blur border border-foreground rounded-lg hover:border-[var(--stroke)] hover:bg-primary transition-all ease-in duration-100;
+  @apply max-w-72 flex flex-col items-center justify-start gap-6 py-10 px-4 bg-card backdrop-blur border border-foreground rounded-lg hover:border-[var(--stroke)] hover:bg-primary transition-all ease-in duration-100 shadow-lg;
+}
+
+.custom-swiper {
+  --swiper-pagination-bullet-inactive-color: #6f4efd;
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+  --swiper-pagination-color: #6f4efd;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-slide {
+  opacity: 0.5;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1.05) !important;
+  z-index: 1;
 }

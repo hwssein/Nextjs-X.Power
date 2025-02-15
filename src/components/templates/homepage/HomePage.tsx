@@ -1,5 +1,6 @@
 import HomePageHeader from "@/templates/homepage/HomePageHeader";
 import HomePageServices from "@/templates/homepage/HomePageServices";
+import HomePageStore from "@/templates/homepage/HomePageStore";
 
 function HomePage() {
   return (
@@ -9,6 +10,8 @@ function HomePage() {
       <HomePageHeader />
 
       <HomePageServices />
+
+      <HomePageStore />
     </>
   );
 }

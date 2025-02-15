@@ -18,15 +18,15 @@ function HomePageHeader() {
           </div>
 
           <div className="w-full flex flex-col items-center justify-center md:mt-10 md:pr-4 md:max-w-3xl">
-            <p className="bg-gradient-to-l from-white to-[var(--stroke)] text-transparent bg-clip-text font-extrabold text-xl text-center mb-2 md:text-5xl md:p-1 md:text-right md:mb-4">
+            <p className="bg-gradient-to-l from-white to-[var(--highlight)] text-transparent bg-clip-text font-extrabold text-xl text-center mb-2 md:text-5xl md:p-1 md:text-right md:mb-4">
               هر آنچه برای رسیدن به اندام ایده آل نیاز دارید
             </p>
 
-            <h1 className="bg-gradient-to-l from-white to-[var(--stroke)] text-transparent bg-clip-text text-center mb-6 md:text-right md:text-2xl md:mb-16">
+            <h1 className="bg-gradient-to-l from-white to-[var(--highlight)] text-transparent bg-clip-text text-center mb-6 md:text-right md:text-2xl md:mb-16">
               تخصصی ترین وبسایت بدنسازی درایران با مجوز رسمی
             </h1>
 
-            <span className="w-full inline-block p-3 relative mb-4 md:mb-6">
+            <span className="w-full inline-block p-3 relative mb-4 md:mb-6 shadow-lg">
               <p className="w-full text-center py-8 px-4 border border-[var(--stroke)] rounded-lg backdrop-blur bg-card md:p-10">
                 با بیش از ۲۵ سال تجربه در ورزش بدنسازی و تناسب اندام تصمیم
                 گرفتیم دانش و تجربه خود را در اختیار همه علاقه‌مندان به این رشته
@@ -77,7 +77,7 @@ function HomePageHeader() {
           </div>
         </div>
 
-        <p className="w-full bg-primary p-2 py-4 text-center -rotate-2 font-extrabold text-xl md:text-2xl transform origin-center scale-105">
+        <p className="w-full bg-primary p-4 text-center -rotate-2 font-extrabold text-xl md:text-2xl transform scale-105">
           همه می خواهند بدنساز باشند اما کسی نمی خواهد وزنه های سنگین بلند کند!
         </p>
       </section>
