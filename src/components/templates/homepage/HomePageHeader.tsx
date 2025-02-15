@@ -5,7 +5,7 @@ import { Trophy } from "lucide-react";
 function HomePageHeader() {
   return (
     <>
-      <section className="w-full">
+      <section className="w-full overflow-hidden pb-4">
         <div className="w-full flex flex-col items-center justify-center gap-2 mb-6 md:mb-14 md:flex-row-reverse md:justify-between">
           <div className="w-4/5 min-w-80">
             <Image
@@ -18,11 +18,11 @@ function HomePageHeader() {
           </div>
 
           <div className="w-full flex flex-col items-center justify-center md:mt-10 md:pr-4 md:max-w-3xl">
-            <p className="bg-gradient-to-l from-white to-[var(--highlight)] text-transparent bg-clip-text font-extrabold text-xl text-center mb-2 md:text-5xl md:p-1 md:text-right md:mb-4">
+            <p className="bg-gradient-to-l from-white to-[var(--highlight)] text-transparent bg-clip-text font-extrabold text-xl text-center mb-2 sm:text-3xl md:text-5xl md:p-1 md:text-right md:mb-4">
               هر آنچه برای رسیدن به اندام ایده آل نیاز دارید
             </p>
 
-            <h1 className="bg-gradient-to-l from-white to-[var(--highlight)] text-transparent bg-clip-text text-center mb-6 md:text-right md:text-2xl md:mb-16">
+            <h1 className="bg-gradient-to-l from-white to-[var(--highlight)] text-transparent bg-clip-text text-center mb-6 sm:text-xl md:text-right md:text-2xl md:mb-16">
               تخصصی ترین وبسایت بدنسازی درایران با مجوز رسمی
             </h1>
 
