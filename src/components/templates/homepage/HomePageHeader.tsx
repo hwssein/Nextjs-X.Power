@@ -13,6 +13,9 @@ function HomePageHeader() {
               width={400}
               height={400}
               alt="header image"
+              priority={true}
+              sizes="100vw"
+              layout="responsive"
               className="w-full flex items-center justify-center mb-6 md:mt-5"
             />
           </div>

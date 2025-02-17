@@ -10,8 +10,8 @@ export const metadata = homepageMetaData;
 
 export default function RootLayout({ children }: ChildrenType) {
   return (
-    <html lang="fa" dir="rtl" className={VazirmatnFont.className}>
-      <body className="max-w-screen-xl mx-auto bg-foreground text-white font-normal text-base">
+    <html lang="fa" dir="rtl" className={`${VazirmatnFont.className} relative`}>
+      <body className="max-w-screen-xl mx-auto bg-foreground text-white font-normal text-base ">
         <Layout>{children}</Layout>
       </body>
     </html>

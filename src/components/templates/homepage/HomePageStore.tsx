@@ -8,12 +8,10 @@ import StoreCard from "@/components/modules/StoreCard";
 
 function HomePageStore() {
   return (
-    <section className="w-full flex flex-col items-center justify-start gap-2 mt-10 px-4">
-      <h2 className="w-full text-center text-primary font-semibold text-xl md:text-2xl">
-        محصولات
-      </h2>
+    <section className="w-full flex flex-col items-center justify-start gap-2 mt-10 px-4 md:mt-14">
+      <h2 className="w-full text-center text-primary font-semibold">محصولات</h2>
 
-      <h3 className="w-full text-center font-bold text-lg md:text-xl mt-2">
+      <h3 className="w-full text-center font-bold text-lg ">
         جدیدترین محصولات
       </h3>
 

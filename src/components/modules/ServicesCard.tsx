@@ -14,7 +14,13 @@ function ServicesCard({ icon, title, description, url }: ServicesCardProps) {
   return (
     <>
       <div className="services-card">
-        <Image src={icon} width={50} height={50} alt="services-icon" />
+        <Image
+          src={icon}
+          width={50}
+          height={50}
+          alt="services-icon"
+          loading="lazy"
+        />
 
         <span className="font-bold">{title}</span>
 

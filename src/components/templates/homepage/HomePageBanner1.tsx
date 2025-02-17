@@ -13,6 +13,7 @@ function HomePageBanner1() {
             width={500}
             height={500}
             alt="homepage banner 1"
+            loading="lazy"
             className="w-full flex items-center justify-center"
           />
         </div>
