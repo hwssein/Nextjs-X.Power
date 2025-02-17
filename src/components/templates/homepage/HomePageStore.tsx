@@ -55,7 +55,7 @@ function HomePageStore() {
             },
           }}
           modules={[Pagination]}
-          className="!pb-12 custom-swiper"
+          className="!pb-12 custom-swiper cursor-pointer"
         >
           <SwiperSlide className="!flex !items-center !justify-center py-6 group">
             <StoreCard

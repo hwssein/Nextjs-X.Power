@@ -2,6 +2,7 @@ import HomePageHeader from "@/templates/homepage/HomePageHeader";
 import HomePageServices from "@/templates/homepage/HomePageServices";
 import HomePageStore from "@/templates/homepage/HomePageStore";
 import HomePageBanner1 from "@/templates/homepage/HomePageBanner1";
+import HomePageLearning from "@/templates/homepage/HomePageLearning";
 
 function HomePage() {
   return (
@@ -15,6 +16,8 @@ function HomePage() {
       <HomePageStore />
 
       <HomePageBanner1 />
+
+      <HomePageLearning />
     </>
   );
 }
