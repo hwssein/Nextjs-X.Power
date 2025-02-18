@@ -51,6 +51,12 @@ function Navbar() {
         >
           <Link href="#about">درباره ما</Link>
         </li>
+
+        <li className="p-2 text-white">
+          <Link href="https://zarbbeat.vercel.app" target="_blank">
+            پخش موزیک
+          </Link>
+        </li>
       </ul>
 
       <div className="p-2">

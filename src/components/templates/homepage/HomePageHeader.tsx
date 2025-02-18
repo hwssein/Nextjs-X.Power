@@ -23,7 +23,7 @@ function HomePageHeader() {
               هر آنچه برای رسیدن به اندام ایده آل نیاز دارید
             </p>
 
-            <h1 className="bg-gradient-to-l from-white to-[var(--highlight)] text-transparent bg-clip-text text-center mb-6 sm:text-xl md:text-right md:text-2xl md:mb-16">
+            <h1 className="bg-gradient-to-l from-white to-[var(--highlight)] text-transparent bg-clip-text text-center mb-8 sm:text-xl md:text-right md:text-2xl md:mb-16">
               تخصصی ترین وبسایت بدنسازی درایران با مجوز رسمی
             </h1>
 

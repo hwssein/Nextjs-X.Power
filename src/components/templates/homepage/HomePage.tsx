@@ -4,6 +4,7 @@ import HomePageStore from "@/templates/homepage/HomePageStore";
 import HomePageBanner1 from "@/templates/homepage/HomePageBanner1";
 import HomePageLearning from "@/templates/homepage/HomePageLearning";
 import HomePageBlog from "./HomePageBlog";
+import HomepageMusic from "./HomepageMusic";
 
 function HomePage() {
   return (
@@ -15,6 +16,8 @@ function HomePage() {
       <HomePageServices />
 
       <HomePageStore />
+
+      <HomepageMusic />
 
       <HomePageBanner1 />
 
