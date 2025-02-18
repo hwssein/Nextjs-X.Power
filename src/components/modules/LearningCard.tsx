@@ -1,13 +1,10 @@
+import { LearningDataProps } from "@/types/types";
+
 import { Video } from "lucide-react";
 import { MoveRight } from "lucide-react";
 import "animate.css";
 
-interface LearningCardProps {
-  title: string;
-  description: string;
-}
-
-function LearningCard({ title, description }: LearningCardProps) {
+function LearningCard({ title, description }: LearningDataProps) {
   return (
     <div className="w-full h-full relative flex flex-col items-start justify-start gap-6 bg-primary px-4 py-8 sm:justify-center">
       <span className="w-full flex items-center justify-start gap-2 text-xl font-extrabold pr-4">

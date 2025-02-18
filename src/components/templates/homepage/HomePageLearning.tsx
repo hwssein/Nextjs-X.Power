@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import LearningCard from "@/components/modules/LearningCard";
 import LearningVideoCard from "@/modules/LearningVideoCard";
+import { learningData } from "@/constants/homePageData";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Controller } from "swiper/modules";
@@ -40,26 +41,14 @@ function HomePageLearning() {
             modules={[Controller]}
             className="w-full h-full rounded-lg overflow-hidden cursor-pointer shadow-lg"
           >
-            <SwiperSlide>
-              <LearningCard
-                title="آموزش جلو بازو ایستاده"
-                description="برای رشد عضلات جلو بازو، از ترکیب حرکات تک‌مفصلی مثل جلو بازو دمبل و ترکیبی مثل جلو بازو هالتر استفاده کنید. هر حرکت جلو بازو ویژگی خاص خودش رو داره و به زیبایی و قدرت بازوها کمک می‌کنه. توجه به اجرای صحیح این حرکات، مخصوصاً جلو بازو هالتر، بسیار مهمه."
-              />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <LearningCard
-                title="پرس سینه هالتر"
-                description="پرس سینه هالتر یکی از بهترین حرکات برای تقویت عضلات سینه، شانه و سه سر بازو است. این حرکت با افزایش قدرت و حجم عضلات سینه، به بهبود عملکرد در حرکات دیگر کمک می‌کند. برای بیشترین بازده، توجه به تکنیک صحیح و کنترل وزن بسیار مهمه. اجرای درست پرس سینه هالتر، به‌ویژه در حفظ فرم بدن، تاثیر زیادی در پیشرفت شما خواهد داشت."
-              />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <LearningCard
-                title="سرشانه نشر از جانب"
-                description="برای تقویت عضلات سرشانه، از ترکیب حرکات نشر از جلو و نشر از جانب استفاده کنید. نشر از جانب عضلات میانه سرشانه رو هدف قرار می‌ده و به فرم بازوها کمک می‌کنه. این حرکت به‌خصوص وقتی با دقت و درستی انجام بشه، تاثیر زیادی در ساختن یک شانه قوی و خوش‌فرم داره."
-              />
-            </SwiperSlide>
+            {learningData.map((item, index) => (
+              <SwiperSlide key={index}>
+                <LearningCard
+                  title={item.title}
+                  description={item.description}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
 
@@ -86,17 +75,11 @@ function HomePageLearning() {
             noSwiping={true}
             className="w-full h-full rounded-lg overflow-hidden shadow-lg border-border border"
           >
-            <SwiperSlide>
-              <LearningVideoCard image="/images/homepage-learning1.png" />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <LearningVideoCard image="/images/homepage-learning2.jpg" />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <LearningVideoCard image="/images/homepage-learning3.jpg" />
-            </SwiperSlide>
+            {learningData.map((item, index) => (
+              <SwiperSlide key={index}>
+                <LearningVideoCard image={item.image} />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

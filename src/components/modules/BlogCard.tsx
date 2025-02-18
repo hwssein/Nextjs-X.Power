@@ -1,14 +1,9 @@
 import Image from "next/image";
+import { BlogDataProps } from "@/types/types";
+
 import { MoveLeft } from "lucide-react";
 
-interface BlogCardProps {
-  image: string;
-  title: string;
-  description: string;
-  time: number;
-}
-
-function BlogCard({ image, title, description, time }: BlogCardProps) {
+function BlogCard({ image, title, description, time }: BlogDataProps) {
   return (
     <>
       <div className="w-full max-w-80 h-96 relative bg-card rounded-lg flex flex-col items-center justify-start gap-3 mb-3 hover:bg-primary transition-colors group cursor-pointer shadow-lg">

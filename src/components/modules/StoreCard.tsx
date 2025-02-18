@@ -3,14 +3,9 @@
 import Image from "next/image";
 
 import { Plus } from "lucide-react";
+import { StoreDataProps } from "@/types/types";
 
-interface StoreCardProps {
-  image: string;
-  title: string;
-  price: number;
-}
-
-function StoreCard({ image, title, price }: StoreCardProps) {
+function StoreCard({ image, title, price }: StoreDataProps) {
   return (
     <div className="w-64 h-80 flex flex-col items-center justify-start gap-4 relative select-none mx-auto">
       <div className="max-w-36 p-2 bg-white/15 backdrop-blur-md rounded-lg z-10 shadow-lg border border-[var(--stroke)] group-[.swiper-slide-active]:bg-white">

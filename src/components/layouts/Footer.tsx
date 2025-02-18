@@ -9,7 +9,10 @@ function Footer() {
   return (
     <>
       <div className="w-full flex-col items-center justify-center mt-20">
-        <div className="w-[90%] flex flex-col items-center justify-start gap-4 bg-card mx-auto py-4 rounded-t-lg lg:flex-row lg:justify-between lg:w-4/5">
+        <div
+          className="w-[90%] flex flex-col items-center justify-start gap-4 bg-card mx-auto py-4 rounded-t-lg lg:flex-row lg:justify-between lg:w-4/5"
+          id="about"
+        >
           <a
             href="tel:02134562245"
             className="w-full flex items-center justify-center gap-2"
@@ -67,19 +70,19 @@ function Footer() {
             <div className="w-full flex items-center justify-center gap-3">
               <Image
                 src="/images/zarinpal.png"
-                width={70}
-                height={100}
+                width={100}
+                height={120}
                 loading="lazy"
                 alt="zarinpal image"
-                className="rounded-lg"
+                className="w-[100px] h-[120px] rounded-lg"
               />
               <Image
                 src="/images/enamad.png"
-                width={85}
-                height={100}
+                width={100}
+                height={120}
                 loading="lazy"
                 alt="e-namad image"
-                className="bg-white rounded-lg"
+                className="w-[100px] h-[120px] bg-white rounded-lg"
               />
             </div>
           </div>

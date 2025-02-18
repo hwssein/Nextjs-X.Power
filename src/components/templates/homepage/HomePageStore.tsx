@@ -1,14 +1,19 @@
 "use client";
 
+import StoreCard from "@/components/modules/StoreCard";
+import { storeData } from "@/constants/homePageData";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-import StoreCard from "@/components/modules/StoreCard";
 
 function HomePageStore() {
   return (
-    <section className="w-full flex flex-col items-center justify-start gap-2 mt-10 px-4 md:mt-14">
+    <section
+      className="w-full flex flex-col items-center justify-start gap-2 mt-10 px-4 md:mt-14"
+      id="store"
+    >
       <h2 className="w-full text-center text-primary font-semibold">محصولات</h2>
 
       <h3 className="w-full text-center font-bold text-lg ">
@@ -55,37 +60,18 @@ function HomePageStore() {
           modules={[Pagination]}
           className="!pb-12 custom-swiper cursor-pointer"
         >
-          <SwiperSlide className="!flex !items-center !justify-center py-6 group">
-            <StoreCard
-              image="/images/store-product1.png"
-              title="پروتئین وی ژن استار 2270 گرم"
-              price={2290000}
-            />
-          </SwiperSlide>
-
-          <SwiperSlide className="!flex !items-center !justify-center py-6 group">
-            <StoreCard
-              image="/images/store-product2.png"
-              title="پروتئین وی یوروویتال 1000 گرم"
-              price={1800000}
-            />
-          </SwiperSlide>
-
-          <SwiperSlide className="!flex !items-center !justify-center py-6 group">
-            <StoreCard
-              image="/images/store-product3.png"
-              title="گینر ژن استار 3000 گرم"
-              price={9600000}
-            />
-          </SwiperSlide>
-
-          <SwiperSlide className="!flex !items-center !justify-center py-6 group">
-            <StoreCard
-              image="/images/store-product4.png"
-              title="دلیشس وی پروتئین کیو ان تی"
-              price={3180000}
-            />
-          </SwiperSlide>
+          {storeData.map((item, index) => (
+            <SwiperSlide
+              className="!flex !items-center !justify-center py-6 group"
+              key={index}
+            >
+              <StoreCard
+                image={item.image}
+                title={item.title}
+                price={item.price}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>

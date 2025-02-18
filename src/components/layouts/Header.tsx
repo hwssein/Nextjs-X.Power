@@ -1,7 +1,11 @@
+"use client";
+
 import dynamic from "next/dynamic";
 
-const Navbar = dynamic(() => import("@/elements/Navbar"));
-const ResponsiveNavbar = dynamic(() => import("@/elements/ResponsiveNavbar"));
+const Navbar = dynamic(() => import("@/elements/Navbar"), { ssr: false });
+const ResponsiveNavbar = dynamic(() => import("@/elements/ResponsiveNavbar"), {
+  ssr: false,
+});
 
 function Header() {
   return (

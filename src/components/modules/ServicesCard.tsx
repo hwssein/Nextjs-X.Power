@@ -1,16 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import { MoveLeft } from "lucide-react";
+import { ServicesDataProps } from "@/types/types";
 
-interface ServicesCardProps {
-  icon: string;
-  title: string;
-  description: string;
-  url: string;
-}
-
-function ServicesCard({ icon, title, description, url }: ServicesCardProps) {
+function ServicesCard({ icon, title, description, url }: ServicesDataProps) {
   return (
     <>
       <div className="services-card">
@@ -26,12 +19,10 @@ function ServicesCard({ icon, title, description, url }: ServicesCardProps) {
 
         <p className="w-full text-center">{description}</p>
 
-        <Link
-          href={`/blog/${url}`}
-          className="w-full flex items-center justify-center gap-2"
-        >
+        <p className="w-full flex items-center justify-center gap-2 cursor-pointer">
           ادامه مطلب <MoveLeft />
-        </Link>
+          <span className="hidden">{url}</span>
+        </p>
       </div>
     </>
   );

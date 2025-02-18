@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 import { AlignJustify } from "lucide-react";
 import { Button } from "../ui/button";
@@ -11,7 +12,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import Link from "next/link";
 
 function ResponsiveNavbar() {
   const pathname = usePathname();
@@ -45,7 +45,7 @@ function ResponsiveNavbar() {
                       pathname === "/store" ? "text-primary" : "text-white"
                     }`}
                   >
-                    <Link href="/store">فروشگاه</Link>
+                    <Link href="#store">فروشگاه</Link>
                   </li>
 
                   <li
@@ -53,7 +53,7 @@ function ResponsiveNavbar() {
                       pathname === "/services" ? "text-primary" : "text-white"
                     }`}
                   >
-                    <Link href="/services">خدمات</Link>
+                    <Link href="#services">خدمات</Link>
                   </li>
 
                   <li
@@ -61,7 +61,7 @@ function ResponsiveNavbar() {
                       pathname === "/blog" ? "text-primary" : "text-white"
                     }`}
                   >
-                    <Link href="/blog">بلاگ</Link>
+                    <Link href="#blog">بلاگ</Link>
                   </li>
 
                   <li
@@ -69,7 +69,7 @@ function ResponsiveNavbar() {
                       pathname === "/about" ? "text-primary" : "text-white"
                     }`}
                   >
-                    <Link href="/about">درباره ما</Link>
+                    <Link href="#about">درباره ما</Link>
                   </li>
                 </ul>
               </SheetHeader>

@@ -27,6 +27,7 @@
       "@/templates/*": ["./src/components/templates/*"],
       "@/ui/*": ["./src/components/ui/*"],
       "@/config/*": ["./src/config/*"],
+      "@/constants/*": ["./src/constants/*"],
       "@/lib/*": ["./src/lib/*"],
       "@/types/*": ["./src/types/*"]
     }

@@ -1,11 +1,13 @@
+import { LearningDataProps } from "@/types/types";
+
 import Image from "next/image";
 import { Play } from "lucide-react";
 
-function LearningVideoCard({ image }: { image: string }) {
+function LearningVideoCard({ image }: LearningDataProps) {
   return (
     <div className="w-full h-full flex items-start justify-center xs:items-center relative">
       <Image
-        src={image}
+        src={image ?? ""}
         width={400}
         height={400}
         alt="learning video Card"

@@ -25,7 +25,7 @@ function Navbar() {
             pathname === "/store" ? "text-primary" : "text-white"
           }`}
         >
-          <Link href="/store">فروشگاه</Link>
+          <Link href="#store">فروشگاه</Link>
         </li>
 
         <li
@@ -33,7 +33,7 @@ function Navbar() {
             pathname === "/services" ? "text-primary" : "text-white"
           }`}
         >
-          <Link href="/services">خدمات</Link>
+          <Link href="#services">خدمات</Link>
         </li>
 
         <li
@@ -41,7 +41,7 @@ function Navbar() {
             pathname === "/blog" ? "text-primary" : "text-white"
           }`}
         >
-          <Link href="/blog">بلاگ</Link>
+          <Link href="#blog">بلاگ</Link>
         </li>
 
         <li
@@ -49,7 +49,7 @@ function Navbar() {
             pathname === "/about" ? "text-primary" : "text-white"
           }`}
         >
-          <Link href="/about">درباره ما</Link>
+          <Link href="#about">درباره ما</Link>
         </li>
       </ul>
 
