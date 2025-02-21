@@ -32,7 +32,7 @@ function HomePageHeader() {
         <div className="w-full flex flex-col items-center justify-center gap-2 mb-6 md:mb-14 md:flex-row-reverse md:justify-between">
           <div className="w-4/5 min-w-80">
             <Image
-              src="/images/header-image.png"
+              src="/images/header-image-dark.png"
               width={400}
               height={400}
               alt="header image"
