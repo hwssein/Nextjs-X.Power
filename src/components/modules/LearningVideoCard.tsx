@@ -14,7 +14,7 @@ function LearningVideoCard({ image }: LearningDataProps) {
         loading="lazy"
       />
       <div className="w-full h-20 flex flex-col items-center justify-center absolute bottom-2 backdrop-blur-sm">
-        <span className="w-9 h-9 p-1 bg-primary rounded-full border border-[var(--stroke)] flex items-center justify-center cursor-pointer">
+        <span className="w-9 h-9 p-1 bg-card rounded-full border border-[var(--stroke)] flex items-center justify-center cursor-pointer">
           <Play />
         </span>
       </div>

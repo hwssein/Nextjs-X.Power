@@ -14,14 +14,16 @@ function Navbar() {
         </li>
 
         <li
-          className={`p-2 ${pathname === "/" ? "text-primary" : "text-white"}`}
+          className={`p-2 ${
+            pathname === "/" ? "text-[var(--highlight)]" : "text-primary"
+          }`}
         >
           <Link href="/">صفحه اصلی</Link>
         </li>
 
         <li
           className={`p-2 ${
-            pathname === "/store" ? "text-primary" : "text-white"
+            pathname === "/store" ? "text-[var(--highlight)]" : "text-primary"
           }`}
         >
           <Link href="#store">فروشگاه</Link>
@@ -29,7 +31,9 @@ function Navbar() {
 
         <li
           className={`p-2 ${
-            pathname === "/services" ? "text-primary" : "text-white"
+            pathname === "/services"
+              ? "text-[var(--highlight)]"
+              : "text-primary"
           }`}
         >
           <Link href="#services">خدمات</Link>
@@ -37,7 +41,7 @@ function Navbar() {
 
         <li
           className={`p-2 ${
-            pathname === "/blog" ? "text-primary" : "text-white"
+            pathname === "/blog" ? "text-[var(--highlight)]" : "text-primary"
           }`}
         >
           <Link href="#blog">بلاگ</Link>
@@ -45,13 +49,13 @@ function Navbar() {
 
         <li
           className={`p-2 ${
-            pathname === "/about" ? "text-primary" : "text-white"
+            pathname === "/about" ? "text-[var(--highlight)]" : "text-primary"
           }`}
         >
           <Link href="#about">درباره ما</Link>
         </li>
 
-        <li className="p-2 text-white">
+        <li className="p-2 text-">
           <Link href="https://zarbbeat.vercel.app" target="_blank">
             پخش موزیک
           </Link>

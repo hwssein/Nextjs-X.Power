@@ -4,16 +4,19 @@ import { motion } from "framer-motion";
 
 export const TextHoverEffect = ({
   text,
-  duration,
+  duration = 0.5,
 }: {
   text: string;
   duration?: number;
-  automatic?: boolean;
 }) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const [cursor, setCursor] = useState({ x: 0, y: 0 });
   const [hovered, setHovered] = useState(false);
-  const [maskPosition, setMaskPosition] = useState({ cx: "50%", cy: "50%" });
+  const [maskPosition, setMaskPosition] = useState({
+    cx: "50%",
+    cy: "50%",
+    r: "20%",
+  });
 
   useEffect(() => {
     if (svgRef.current && cursor.x !== null && cursor.y !== null) {
@@ -23,6 +26,7 @@ export const TextHoverEffect = ({
       setMaskPosition({
         cx: `${cxPercentage}%`,
         cy: `${cyPercentage}%`,
+        r: "20%",
       });
     }
   }, [cursor]);
@@ -36,7 +40,11 @@ export const TextHoverEffect = ({
       xmlns="http://www.w3.org/2000/svg"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      onMouseMove={(e) => setCursor({ x: e.clientX, y: e.clientY })}
+      onMouseMove={(e) => {
+        if (e) {
+          setCursor({ x: e.clientX, y: e.clientY });
+        }
+      }}
       className="select-none"
     >
       <defs>
@@ -61,13 +69,14 @@ export const TextHoverEffect = ({
         <motion.radialGradient
           id="revealMask"
           gradientUnits="userSpaceOnUse"
-          r="20%"
+          initial={{ cx: "50%", cy: "50%", r: "20%" }}
           animate={maskPosition}
-          transition={{ duration: duration ?? 0, ease: "easeOut" }}
+          transition={{ duration, ease: "easeOut" }}
         >
           <stop offset="0%" stopColor="white" />
           <stop offset="100%" stopColor="black" />
         </motion.radialGradient>
+
         <mask id="textMask">
           <rect
             x="0"
@@ -78,6 +87,7 @@ export const TextHoverEffect = ({
           />
         </mask>
       </defs>
+
       <text
         x="50%"
         y="50%"
@@ -89,6 +99,7 @@ export const TextHoverEffect = ({
       >
         {text}
       </text>
+
       <motion.text
         x="50%"
         y="50%"
@@ -108,6 +119,7 @@ export const TextHoverEffect = ({
       >
         {text}
       </motion.text>
+
       <text
         x="50%"
         y="50%"

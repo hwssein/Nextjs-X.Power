@@ -24,7 +24,7 @@ function HomePageHeader() {
         <div className="w-full flex items-center justify-center mb-4 relative px-3 mt-10">
           <HeaderTrophy />
 
-          <span className="absolute -top-8 left-5 bg-primary p-3 rounded-full z-10 trophy:left-[10%]">
+          <span className="absolute -top-8 left-5 bg-card p-3 rounded-full z-10 trophy:left-[10%]">
             <Trophy size={35} />
           </span>
         </div>
@@ -87,7 +87,7 @@ function HomePageHeader() {
           </div>
         </div>
 
-        <p className="w-full bg-primary p-4 text-center -rotate-2 font-extrabold text-xl md:text-2xl transform scale-105 mt-10">
+        <p className="w-full bg-secondary p-4 text-center -rotate-2 font-extrabold text-xl md:text-2xl transform scale-105 mt-10">
           همه می خواهند بدنساز باشند اما کسی نمی خواهد وزنه های سنگین بلند کند!
         </p>
       </section>

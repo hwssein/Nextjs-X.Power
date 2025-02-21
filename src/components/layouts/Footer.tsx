@@ -26,25 +26,25 @@ function Footer() {
           </p>
 
           <span className="w-full flex items-center justify-center gap-3">
-            <span className="p-2 bg-secondary-foreground rounded-md cursor-pointer">
+            <span className="p-2 bg-secondary rounded-md cursor-pointer">
               <Twitter />
             </span>
 
-            <span className="p-2 bg-secondary-foreground rounded-md cursor-pointer">
+            <span className="p-2 bg-secondary rounded-md cursor-pointer">
               <Instagram />
             </span>
 
-            <span className="p-2 bg-secondary-foreground rounded-md cursor-pointer">
+            <span className="p-2 bg-secondary rounded-md cursor-pointer">
               <Linkedin />
             </span>
 
-            <span className="p-2 bg-secondary-foreground rounded-md cursor-pointer">
+            <span className="p-2 bg-secondary rounded-md cursor-pointer">
               <Youtube />
             </span>
           </span>
         </div>
 
-        <div className="w-full flex flex-col items-center justify-start py-4 sm:py-10 bg-primary">
+        <div className="w-full flex flex-col items-center justify-start py-4 sm:py-10 bg-secondary">
           <div className="w-full flex flex-col items-center justify-start gap-6 sm:flex-row sm:items-start sm:justify-between sm:gap-2">
             <div className="w-full flex flex-col items-center justify-start gap-1">
               <span className="font-semibold">دسترسی سریع</span>
@@ -90,7 +90,7 @@ function Footer() {
           <Link
             href="https://github.com/hwssein"
             target="_blank"
-            className="w-[90%] text-center mt-6 bg-card p-3 rounded sm:w-4/5"
+            className="w-[80%] text-center mt-6 text-[var(--stroke)] p-3 border-b border-[var(--highlight)] sm:w-[40%]"
           >
             توسعه داده شده توسط hwssein
           </Link>

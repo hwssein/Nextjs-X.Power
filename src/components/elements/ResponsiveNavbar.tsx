@@ -24,7 +24,7 @@ function ResponsiveNavbar() {
               <AlignJustify size={28} />
             </SheetTrigger>
 
-            <SheetContent className="bg-foreground border-l-black">
+            <SheetContent className="bg-background border-l-black">
               <SheetHeader>
                 <SheetTitle className="w-full text-center text-white uppercase tracking-wider">
                   x.power
@@ -33,7 +33,9 @@ function ResponsiveNavbar() {
                 <ul className="w-full flex- flex-col items-start justify-items-start gap-4">
                   <li
                     className={`p-2 ${
-                      pathname === "/" ? "text-primary" : "text-white"
+                      pathname === "/"
+                        ? "text-[var(--highlight)]"
+                        : "text-primary"
                     }`}
                   >
                     <Link href="/">صفحه اصلی</Link>
@@ -41,7 +43,9 @@ function ResponsiveNavbar() {
 
                   <li
                     className={`p-2 ${
-                      pathname === "/store" ? "text-primary" : "text-white"
+                      pathname === "/store"
+                        ? "text-[var(--highlight)]"
+                        : "text-primary"
                     }`}
                   >
                     <Link href="#store">فروشگاه</Link>
@@ -49,7 +53,9 @@ function ResponsiveNavbar() {
 
                   <li
                     className={`p-2 ${
-                      pathname === "/services" ? "text-primary" : "text-white"
+                      pathname === "/services"
+                        ? "text-[var(--highlight)]"
+                        : "text-primary"
                     }`}
                   >
                     <Link href="#services">خدمات</Link>
@@ -57,7 +63,9 @@ function ResponsiveNavbar() {
 
                   <li
                     className={`p-2 ${
-                      pathname === "/blog" ? "text-primary" : "text-white"
+                      pathname === "/blog"
+                        ? "text-[var(--highlight)]"
+                        : "text-primary"
                     }`}
                   >
                     <Link href="#blog">بلاگ</Link>
@@ -65,7 +73,7 @@ function ResponsiveNavbar() {
 
                   <li
                     className={`p-2 ${
-                      pathname === "/about" ? "text-primary" : "text-white"
+                      pathname === "/about" ? "text-primary" : "text-primary"
                     }`}
                   >
                     <Link href="#about">درباره ما</Link>

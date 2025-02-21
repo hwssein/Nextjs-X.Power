@@ -23,7 +23,7 @@ function HomePageBanner1() {
             برنامه تمرینی کاملا اختصاصی برای شما...
           </p>
 
-          <p className="w-full text-center px-4 text-secondary md:text-right">
+          <p className="w-full text-center px-4 text-primary md:text-right">
             هر فردی با هدفی خاص ورزش می‌کند: کاهش وزن، افزایش وزن، عضله‌سازی،
             حفظ تناسب اندام یا توانبخشی پس از آسیب. با برنامه‌های ورزشی اختصاصی
             ایکس‌پاور، یک برنامه کاملاً شخصی‌سازی‌شده متناسب با اهداف و شرایط

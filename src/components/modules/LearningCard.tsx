@@ -6,7 +6,7 @@ import "animate.css";
 
 function LearningCard({ title, description }: LearningDataProps) {
   return (
-    <div className="w-full h-full relative flex flex-col items-start justify-start gap-6 bg-primary px-4 py-8 sm:justify-center">
+    <div className="w-full h-full relative flex flex-col items-start justify-start gap-6 bg-secondary px-4 py-8 sm:justify-center">
       <span className="w-full flex items-center justify-start gap-2 text-xl font-extrabold pr-4">
         <Video color="#ffffff" size={27} /> ویدیو آموزشی
       </span>

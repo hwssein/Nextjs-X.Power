@@ -24,7 +24,7 @@ function HomepageMusic() {
             با بهترین موزیک ها به تمرینت قدرت بده
           </p>
 
-          <p className="w-full text-center px-4 text-secondary md:text-right">
+          <p className="w-full text-center px-4 text-primary md:text-right">
             اینجاست که قدرت و انرژی با هم ترکیب می‌شوند. هر تمرین را به تجربه‌ای
             منحصر به فرد تبدیل کن و با موزیک‌های ورزشی ما به بهترین نسخه از خودت
             تبدیل شو.

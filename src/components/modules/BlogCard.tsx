@@ -6,7 +6,7 @@ import { MoveLeft } from "lucide-react";
 function BlogCard({ image, title, description, time }: BlogDataProps) {
   return (
     <>
-      <div className="w-full max-w-80 h-96 relative bg-card rounded-lg flex flex-col items-center justify-start gap-3 mb-3 hover:bg-primary transition-colors group cursor-pointer shadow-lg">
+      <div className="w-full max-w-80 h-96 relative rounded-lg flex flex-col items-center justify-start gap-3 mb-3 bg-secondary hover:bg-card transition-colors group cursor-pointer shadow-lg">
         <div className="w-full flex items-center justify-center relative">
           <Image
             src={image}
@@ -28,7 +28,7 @@ function BlogCard({ image, title, description, time }: BlogDataProps) {
           <p className="w-full px-3 text-right">{description}</p>
         </div>
 
-        <span className="absolute -bottom-3 z-10 p-1 bg-primary rounded-lg group-hover:bg-white transition-all group-hover:text-primary group-hover:rotate-90">
+        <span className="absolute -bottom-3 z-10 p-1 bg-secondary rounded-lg group-hover:bg-white transition-all group-hover:text-black group-hover:rotate-90">
           <MoveLeft />
         </span>
       </div>
