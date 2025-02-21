@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Button } from "../ui/button";
 
 function Navbar() {
   const pathname = usePathname();
@@ -58,10 +57,6 @@ function Navbar() {
           </Link>
         </li>
       </ul>
-
-      <div className="p-2">
-        <Button>ورود و ثبت نام</Button>
-      </div>
     </nav>
   );
 }

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import { Button } from "@/components/ui/button";
 import { MoveLeft } from "lucide-react";
+import { Button } from "@/components/ui/moving-border";
 
 function HomePageBanner1() {
   return (
@@ -32,7 +32,9 @@ function HomePageBanner1() {
           </p>
 
           <div className="w-full flex items-center justify-center gap-4 flex-wrap px-2 md:justify-start">
-            <Button>دریافت برنامه تمرینی</Button>
+            <Button borderRadius="8px" duration={2500}>
+              دریافت برنامه تمرینی
+            </Button>
 
             <span className="flex items-center justify-center gap-2 p-2 rounded-md cursor-pointer">
               مشاهده نظرات کاربران <MoveLeft />

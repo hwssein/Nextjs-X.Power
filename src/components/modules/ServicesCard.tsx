@@ -1,12 +1,15 @@
+"use client";
+
 import Image from "next/image";
 
 import { MoveLeft } from "lucide-react";
 import { ServicesDataProps } from "@/types/types";
+import { GlareCard } from "../ui/glare-card";
 
 function ServicesCard({ icon, title, description, url }: ServicesDataProps) {
   return (
     <>
-      <div className="services-card">
+      <GlareCard className="services-card">
         <Image
           src={icon}
           width={50}
@@ -23,7 +26,7 @@ function ServicesCard({ icon, title, description, url }: ServicesDataProps) {
           ادامه مطلب <MoveLeft />
           <span className="hidden">{url}</span>
         </p>
-      </div>
+      </GlareCard>
     </>
   );
 }

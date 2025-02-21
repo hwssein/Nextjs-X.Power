@@ -1,9 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Button } from "@/components/ui/button";
-
 import { BicepsFlexed } from "lucide-react";
+import { Button } from "@/components/ui/moving-border";
 
 function HomepageMusic() {
   return (
@@ -31,8 +30,12 @@ function HomepageMusic() {
             تبدیل شو.
           </p>
 
-          <Link href="https://zarbbeat.vercel.app" target="_blank">
-            <Button>
+          <Link
+            href="https://zarbbeat.vercel.app"
+            target="_blank"
+            className="w-full flex items-center justify-center"
+          >
+            <Button borderRadius="8px" duration={2500}>
               بزن که بریم
               <BicepsFlexed />
             </Button>

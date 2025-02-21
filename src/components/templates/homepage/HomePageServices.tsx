@@ -16,7 +16,7 @@ function HomePageServices() {
           ما در ایکس پاور چه خدماتی ارائه میکنیم؟
         </h3>
 
-        <div className="w-full p-3 flex flex-wrap items-center justify-center gap-2 mt-4">
+        <div className="w-full p-3 flex flex-wrap items-center justify-center gap-3 mt-4">
           {servicesData.map((item, index) => (
             <ServicesCard
               key={index}

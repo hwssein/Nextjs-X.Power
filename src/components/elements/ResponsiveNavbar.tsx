@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 import { AlignJustify } from "lucide-react";
-import { Button } from "../ui/button";
 import {
   Sheet,
   SheetContent,
@@ -85,10 +84,6 @@ function ResponsiveNavbar() {
           <span className="p-2 font-semibold text-2xl tracking-wider uppercase">
             x.power
           </span>
-        </div>
-
-        <div className="p-2">
-          <Button size="sm">ورود و ثبت نام</Button>
         </div>
       </nav>
     </>

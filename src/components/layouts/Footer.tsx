@@ -8,7 +8,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <>
-      <div className="w-full flex-col items-center justify-center mt-20">
+      <div className="w-full flex-col items-center justify-center">
         <div
           className="w-[90%] flex flex-col items-center justify-start gap-4 bg-card mx-auto py-4 rounded-t-lg lg:flex-row lg:justify-between lg:w-4/5"
           id="about"
@@ -44,7 +44,7 @@ function Footer() {
           </span>
         </div>
 
-        <div className="w-full flex flex-col items-center justify-start py-4 sm:py-10">
+        <div className="w-full flex flex-col items-center justify-start py-4 sm:py-10 bg-primary">
           <div className="w-full flex flex-col items-center justify-start gap-6 sm:flex-row sm:items-start sm:justify-between sm:gap-2">
             <div className="w-full flex flex-col items-center justify-start gap-1">
               <span className="font-semibold">دسترسی سریع</span>

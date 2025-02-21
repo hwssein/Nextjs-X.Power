@@ -6,15 +6,19 @@ import Footer from "./Footer";
 function Layout({ children }: ChildrenType) {
   return (
     <>
-      <header>
-        <Header />
+      <header className="w-full bg-foreground rounded-lg bg-dot-slate-800/85 relative flex flex-col items-center justify-center">
+        <div className="w-full max-w-screen-xl">
+          <Header />
+        </div>
       </header>
 
-      <main>{children}</main>
+      <main className="w-full pb-20 bg-foreground rounded-lg bg-dot-slate-800/85 relative flex flex-col items-center justify-center">
+        <div className="w-full max-w-screen-xl">{children}</div>
+      </main>
 
       <footer>
         <Footer />
-        <div className="w-full h-[507px] bg-primary absolute bottom-0 left-1/2 transform -translate-x-1/2 -z-10 sm:h-[282px]"></div>
+        {/* <div className="w-full h-[507px] bg-primary absolute bottom-0 left-1/2 transform -translate-x-1/2 -z-10 sm:h-[282px]"></div> */}
       </footer>
     </>
   );

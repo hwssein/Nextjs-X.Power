@@ -86,7 +86,7 @@ a:visited {
 }
 
 .services-card {
-  @apply max-w-72 flex flex-col items-center justify-start gap-6 py-10 px-4 bg-card backdrop-blur border border-foreground rounded-lg hover:border-[var(--stroke)] hover:bg-primary transition-all ease-in duration-100 shadow-lg;
+  @apply max-w-72 flex flex-col items-center justify-start gap-6 py-10 px-4 border border-foreground rounded-lg shadow-lg;
 }
 
 .custom-swiper {
