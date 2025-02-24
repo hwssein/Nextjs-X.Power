@@ -2,7 +2,7 @@ import HeaderTrophy from "@/components/elements/HeaderTrophy";
 import Image from "next/image";
 
 import { Trophy } from "lucide-react";
-import { TextHoverEffect } from "@/components/ui/text-hover-effect";
+import TextHoverEffect from "@/components/ui/text-hover-effect";
 import { Button } from "@/components/ui/moving-border";
 
 function HomePageHeader() {
@@ -81,13 +81,14 @@ function HomePageHeader() {
               borderRadius="8px"
               duration={2500}
               containerClassName="w-4/5"
+              className="cursor-not-allowed"
             >
               ورود و ثبت نام
             </Button>
           </div>
         </div>
 
-        <p className="w-full bg-secondary p-4 text-center -rotate-2 font-extrabold text-xl md:text-2xl transform scale-105 mt-10">
+        <p className="w-full bg-secondary p-4 text-center font-extrabold text-xl md:text-2xl mt-8">
           همه می خواهند بدنساز باشند اما کسی نمی خواهد وزنه های سنگین بلند کند!
         </p>
       </section>

@@ -35,7 +35,11 @@ function HomepageMusic() {
             target="_blank"
             className="w-full flex items-center justify-center"
           >
-            <Button borderRadius="8px" duration={2500}>
+            <Button
+              borderRadius="8px"
+              duration={2500}
+              className="cursor-pointer"
+            >
               بزن که بریم
               <BicepsFlexed />
             </Button>

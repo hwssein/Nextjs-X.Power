@@ -90,11 +90,6 @@ html {
     @apply bg-background text-foreground;
   }
 }
-
-.services-card {
-  @apply max-w-72 flex flex-col items-center justify-start gap-6 py-10 px-4 border border-foreground rounded-lg shadow-lg;
-}
-
 .custom-swiper {
   --swiper-pagination-bullet-inactive-color: #6f4efd;
   --swiper-pagination-bullet-inactive-opacity: 0.5;

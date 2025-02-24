@@ -32,7 +32,11 @@ function HomePageBanner1() {
           </p>
 
           <div className="w-full flex items-center justify-center gap-4 flex-wrap px-2 md:justify-start">
-            <Button borderRadius="8px" duration={2500}>
+            <Button
+              borderRadius="8px"
+              duration={2500}
+              className="cursor-not-allowed"
+            >
               دریافت برنامه تمرینی
             </Button>
 
