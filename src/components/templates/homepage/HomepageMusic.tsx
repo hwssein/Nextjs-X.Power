@@ -18,7 +18,7 @@ function HomepageMusic() {
     <>
       <section
         ref={musicContainer}
-        className="w-full flex flex-col items-center justify-start gap-8 mt-16 md:flex-row md:justify-between"
+        className="w-full overflow-x-hidden flex flex-col items-center justify-start gap-8 mt-16 md:flex-row md:justify-between"
       >
         <div className="w-3/4 flex items-center justify-center p-4">
           <motion.div

@@ -17,7 +17,7 @@ function HomePageBanner1() {
     <>
       <section
         ref={bannerContainer}
-        className="w-full flex flex-col items-center justify-center md:flex-row-reverse md:justify-between"
+        className="w-full overflow-x-hidden flex flex-col items-center justify-center md:flex-row-reverse md:justify-between"
       >
         <div className="w-4/5 min-w-80">
           <motion.div
