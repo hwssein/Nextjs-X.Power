@@ -2,9 +2,11 @@
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import { MoveLeft } from "lucide-react";
+
 import { ServicesDataProps } from "@/types/types";
+
 const Meteors = dynamic(() => import("@/ui/meteors"), { ssr: false });
+import { MoveLeft } from "lucide-react";
 
 function ServicesCard({ icon, title, description, url }: ServicesDataProps) {
   return (

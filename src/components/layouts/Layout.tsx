@@ -18,7 +18,6 @@ function Layout({ children }: ChildrenType) {
 
       <footer>
         <Footer />
-        {/* <div className="w-full h-[507px] bg-primary absolute bottom-0 left-1/2 transform -translate-x-1/2 -z-10 sm:h-[282px]"></div> */}
       </footer>
     </>
   );

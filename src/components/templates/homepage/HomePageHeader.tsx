@@ -1,5 +1,7 @@
-import HeaderTrophy from "@/components/elements/HeaderTrophy";
 import Image from "next/image";
+
+import HeaderTrophy from "@/components/elements/HeaderTrophy";
+import StatisticsCounter from "@/components/elements/StatisticsCounter";
 
 import { Trophy } from "lucide-react";
 import TextHoverEffect from "@/components/ui/text-hover-effect";
@@ -42,40 +44,7 @@ function HomePageHeader() {
           </div>
 
           <div className="w-full flex flex-col items-center justify-center gap-6 py-2 px-4 md:gap-8 md:mt-10 md:max-w-3xl">
-            <ul className="w-full flex items-center justify-evenly">
-              <li className="flex flex-col item-center justify-start gap-1">
-                <span className="w-24 text-center text-3xl lg:text-5xl lg:w-40">
-                  ۲۰۰۰+
-                </span>
-                <span className="w-24 text-center text-primary text-base lg:text-xl lg:w-40">
-                  کاربر فعال
-                </span>
-              </li>
-              <li>
-                <span className="w-px h-16 bg-gradient-to-b from-white to-transparent inline-block"></span>
-              </li>
-
-              <li className="flex flex-col item-center justify-start gap-1">
-                <span className="w-24 text-center text-3xl lg:text-5xl lg:w-40">
-                  ۲۵۰+
-                </span>
-                <span className="w-24 text-center text-primary text-base lg:text-xl lg:w-40">
-                  مکمل بدنسازی
-                </span>
-              </li>
-              <li>
-                <span className="w-px h-16 bg-gradient-to-b from-white to-transparent inline-block"></span>
-              </li>
-
-              <li className="flex flex-col item-center justify-start gap-1">
-                <span className="w-24 text-center text-3xl lg:text-5xl lg:w-40">
-                  ۱۰۰۰+
-                </span>
-                <span className="w-24 text-center text-primary text-base lg:text-xl lg:w-40">
-                  رژیم غدایی آنلاین
-                </span>
-              </li>
-            </ul>
+            <StatisticsCounter />
 
             <Button
               borderRadius="8px"

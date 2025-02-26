@@ -47,7 +47,9 @@ function Footer() {
         <div className="w-full flex flex-col items-center justify-start py-4 sm:py-10 bg-secondary">
           <div className="w-full flex flex-col items-center justify-start gap-6 sm:flex-row sm:items-start sm:justify-between sm:gap-2">
             <div className="w-full flex flex-col items-center justify-start gap-1">
-              <span className="font-semibold">دسترسی سریع</span>
+              <span className="font-semibold text-[var(--highlight)]">
+                دسترسی سریع
+              </span>
 
               <ul className="w-full flex flex-col items-center justify-start gap-2 text-sm">
                 <li>فروشگاه</li>
@@ -57,7 +59,9 @@ function Footer() {
             </div>
 
             <div className="w-full flex flex-col items-center justify-start gap-1 ">
-              <span className="font-semibold">راهنمای مشتریان</span>
+              <span className="font-semibold text-[var(--highlight)]">
+                راهنمای مشتریان
+              </span>
 
               <ul className="w-full flex flex-col items-center justify-start gap-2 text-sm">
                 <li>پاسخ به پرسش های متداول</li>
@@ -90,7 +94,7 @@ function Footer() {
           <Link
             href="https://github.com/hwssein"
             target="_blank"
-            className="w-[80%] text-center mt-6 text-[var(--stroke)] p-3 border-b border-[var(--highlight)] sm:w-[40%]"
+            className="w-[80%] text-center mt-6 p-3 bg-card sm:w-[40%] rounded-lg"
           >
             توسعه داده شده توسط hwssein
           </Link>
